@@ -1,0 +1,334 @@
+/* Students.css - Styles for the students management page */
+
+.students-page {
+    width: 100%;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .page-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .search-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid var(--gray-medium);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .search-box input:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 2px rgba(41, 121, 255, 0.1);
+    outline: none;
+  }
+  
+  .search-box svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    font-size: 1rem;
+  }
+  
+  /* Table styling */
+  .students-list {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f9fafb;
+    color: var(--text-secondary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .table td {
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .table tr:hover td {
+    background-color: #f9fafb;
+  }
+  
+  .student-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .student-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(41, 121, 255, 0.1);
+    color: var(--primary-blue);
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .date-info {
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+  }
+  
+  .date-info svg {
+    margin-right: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .text-muted {
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .status-badge.active {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: var(--green-success);
+  }
+  
+  .status-badge.inactive {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--red-error);
+  }
+  
+  /* Action buttons */
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: white;
+  }
+  
+  .view-btn {
+    background-color: var(--primary-blue);
+  }
+  
+  .view-btn:hover {
+    background-color: #1E65D0;
+  }
+  
+  /* Empty state */
+  .empty-state {
+    padding: 50px 20px;
+    text-align: center;
+    color: var(--text-secondary);
+  }
+  
+  /* Loading state */
+  .loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: var(--text-secondary);
+  }
+  
+  .spinner {
+    animation: spin 1.5s linear infinite;
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Modal styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .close-btn:hover {
+    color: var(--red-error);
+  }
+  
+  /* Register form */
+  .register-form {
+    padding: 25px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--gray-medium);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 2px rgba(41, 121, 255, 0.1);
+    outline: none;
+  }
+  
+  .form-hint {
+    display: block;
+    margin-top: 5px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  /* Helper */
+  .mt-3 {
+    margin-top: 15px;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .page-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .page-header button {
+      margin-top: 15px;
+      width: 100%;
+    }
+    
+    .student-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .student-avatar {
+      margin-bottom: 8px;
+    }
+    
+    .action-buttons {
+      flex-wrap: wrap;
+    }
+    
+    .modal {
+      width: 95%;
+    }
+    
+    .form-actions {
+      flex-direction: column-reverse;
+    }
+    
+    .form-actions button {
+      width: 100%;
+    }
+  }

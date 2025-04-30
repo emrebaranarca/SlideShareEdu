@@ -1,0 +1,351 @@
+/* StudentDetail.css - Styles for the student detail page */
+
+.student-detail-page {
+    width: 100%;
+  }
+  
+  .page-header {
+    margin-bottom: 25px;
+  }
+  
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--primary-blue);
+    transition: color 0.2s ease;
+  }
+  
+  .back-link svg {
+    margin-right: 8px;
+  }
+  
+  .back-link:hover {
+    color: #1E65D0;
+    text-decoration: underline;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+  }
+  
+  .profile-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(41, 121, 255, 0.1);
+    color: var(--primary-blue);
+    border-radius: 50%;
+    font-size: 2.5rem;
+    margin-right: 25px;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .profile-info h1 {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+  }
+  
+  .profile-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+  
+  .meta-item svg {
+    margin-right: 8px;
+    color: var(--primary-blue);
+  }
+  
+  .profile-status {
+    margin-left: 20px;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .status-badge.active {
+    background-color: rgba(0, 200, 83, 0.1);
+    color: var(--green-success);
+  }
+  
+  .status-badge.inactive {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--red-error);
+  }
+  
+  /* Activity Overview */
+  .activity-overview {
+    margin-bottom: 30px;
+  }
+  
+  .activity-overview h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .activity-overview h2 svg {
+    margin-right: 10px;
+    color: var(--primary-blue);
+  }
+  
+  .activity-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .activity-stat-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .activity-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-stat-card .stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(41, 121, 255, 0.1);
+    color: var(--primary-blue);
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 1.3rem;
+  }
+  
+  .activity-stat-card .stat-details {
+    flex: 1;
+  }
+  
+  .activity-stat-card h3 {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .activity-stat-card .stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-primary);
+  }
+  
+  /* Usage History */
+  .usage-history {
+    margin-bottom: 30px;
+  }
+  
+  .usage-history h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .usage-history h2 svg {
+    margin-right: 10px;
+    color: var(--primary-blue);
+  }
+  
+  .table-container {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f9fafb;
+    color: var(--text-secondary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .table td {
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .table tr:hover td {
+    background-color: #f9fafb;
+  }
+  
+  .presentation-link {
+    color: var(--primary-blue);
+    font-weight: 500;
+  }
+  
+  .presentation-link:hover {
+    text-decoration: underline;
+  }
+  
+  .text-muted {
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+  
+  .completion-bar {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .completion-progress {
+    height: 100%;
+    background-color: var(--green-success);
+    border-radius: 4px;
+  }
+  
+  .completion-text {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  /* Empty state */
+  .empty-state {
+    padding: 30px 20px;
+    text-align: center;
+    color: var(--text-secondary);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Loading state */
+  .loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: var(--text-secondary);
+  }
+  
+  .spinner {
+    animation: spin 1.5s linear infinite;
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Error state */
+  .error-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: var(--text-primary);
+  }
+  
+  .error-state svg {
+    font-size: 3rem;
+    color: var(--red-error);
+    margin-bottom: 15px;
+  }
+  
+  .error-state h2 {
+    margin-bottom: 15px;
+  }
+  
+  .error-state p {
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+  }
+  
+  .error-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .profile-avatar {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    
+    .profile-info {
+      margin-bottom: 20px;
+    }
+    
+    .profile-status {
+      margin-left: 0;
+    }
+    
+    .meta-item {
+      margin-bottom: 8px;
+    }
+  }
