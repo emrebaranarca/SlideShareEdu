@@ -1,4 +1,6 @@
 # 📚 SlideShareEdu - Eğitimde Teknoloji, Öğretmende Kolaylık
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/emrebaranarca/SlideShareEdu/blob/main/README.en.md)
+
 
 SlideShareEdu, öğretmenlerin öğrencileriyle PowerPoint sunumlarını kolay ve etkin bir şekilde paylaşabilmeleri için geliştirilmiş açık kaynaklı bir eğitim platformudur. Bu platform, öğretmenlere sunumlarını yönetebilecekleri bir web paneli ve öğrencilere bu sunumlara erişebilecekleri bir mobil uygulama sunmaktadır.
 
@@ -188,8 +190,8 @@ Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır. Detaylar için lis
 <p align="center">
   <img src="./screenshots/mobil/IMG_2748.PNG" width="200" alt="Giriş Ekranı">
   <img src="./screenshots/mobil/IMG_2749.PNG" width="200" alt="Ana Ekran">
-  <img src="./screenshots/mobil/IMG_2750.PNG" width="200" alt="Sunum Detayı">
-    <img src="./screenshots/mobil/IMG_2751.PNG" width="200" alt="Sunum Detayı">
+  <img src="./screenshots/mobil/IMG_2750.PNG" width="200" alt="Sunum ">
+  <img src="./screenshots/mobil/IMG_2751.PNG" width="200" alt="Sunum Detayı">
 </p>
 
 
